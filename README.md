@@ -20,7 +20,7 @@ Creat a Random Passworsd Generate that takes user input
     a. ! NOTE - I need to assign checkboxes a value of false before checking  form otherwise value remains true for every password until page refreshed.
 
 ## Hosted Site
-https://deanw77.github.io/Console-Finances/
+https://deanw77.github.io/Custom-Password-Generator/
 
 ### Project Overview
 
@@ -28,3 +28,5 @@ Lots of unforseen difficulties. Working with checkboxes and modals definitely ha
 Took a bit work to get the modal to display without scroll bars on smaller screens. In future I thinkit would be better to develop for the moble view first then scale up.  
 
 ### Final Result
+![Options Modal](images/PGOptions.jpg)
+![Result Display](images/PGResult.jpg)
