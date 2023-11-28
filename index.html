@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>Password Generator</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Password Generator</h1>
+    </header>
+    <div class="card">
+      <div class="card-header">
+        <h2>Generate a Password</h2>
+      </div>
+      <div class="card-body">
+        <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+      </div>
+      <div class="card-footer">
+        <button id="generateModal" class="btn">Generate Password</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal hidden">
+    <p class="close">&times</p>
+    <h1>Password Options</h1>
+
+    <div class="optionsBox">
+      <label for="passwordlength">Password Length (between 1 and 128):</label>
+      <input type="number" id="passwordlength" name="passwordlength" min="8" max="128">
+
+      <div class="checkboxes">
+        <div class="oneCheckbox">
+          <label for="uppercaseLetters">Uppercase Letters</label>
+          <input type="checkbox" id="uppercaseLetters" name="uppercaseLetters">
+        </div>
+        <div class="oneCheckbox">
+          <label for="lowercaseLetters">Lowercase Letters</label>
+          <input type="checkbox" id="lowercaseLetters" name="lowercaseLetters">
+        </div>
+        <div class="oneCheckbox">
+          <label for="numbers">Numbers</label>
+          <input type="checkbox" id="numbers" name="numbers">
+        </div>
+        <div class="oneCheckbox">
+          <label for="specialCharacters">Special Characters</label>
+          <input type="checkbox" id="specialCharacters" name="specialCharacters">
+        </div>
+      </div>
+
+      <button id="modalGenerate" class="btn">Generate Password</button>
+    </div>
+  </div>
+  <div class="overlay"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
